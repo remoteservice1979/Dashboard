@@ -39,13 +39,13 @@ We are very excited to share this dashboard with you and we look forward to hear
 
 ## Versions
 
-[<img src="./github-assets/html.png" width="60" height="60" />](https://www.creative-tim.com/product/black-dashboard)
-[<img src="./github-assets/react.svg" width="60" height="60" />](https://www.creative-tim.com/product/black-dashboard-react)[<img src="./github-assets/vuejs.png" width="60" height="60" />](https://www.creative-tim.com/product/vue-black-dashboard)
+[<img src="./github-assets/html.png" width="60" height="60" />](Maersk product/black-dashboard)
+[<img src="./github-assets/react.svg" width="60" height="60" />](Maersk product/black-dashboard-react)[<img src="./github-assets/vuejs.png" width="60" height="60" />](Maersk product/vue-black-dashboard)
 
 
 | HTML | React | Vue |
 | --- | --- | --- |
-| [![Black Dashboard HTML](https://s3.amazonaws.com/creativetim_bucket/products/93/thumb/opt_bd_thumbnail.jpg)](https://www.creative-tim.com/product/black-dashboard) | [![Black Dashboard React](https://s3.amazonaws.com/creativetim_bucket/products/136/thumb/opt_bd_react.jpg)](https://www.creative-tim.com/product/black-dashboard-react) | [![Vue Black Dashboard](https://s3.amazonaws.com/creativetim_bucket/products/99/thumb/opt_bd_vue_thumbnail.jpg)](https://www.creative-tim.com/product/vue-black-dashboard) |
+| [![Black Dashboard HTML](https://s3.amazonaws.com/creativetim_bucket/products/93/thumb/opt_bd_thumbnail.jpg)](Maersk product/black-dashboard) | [![Black Dashboard React](https://s3.amazonaws.com/creativetim_bucket/products/136/thumb/opt_bd_react.jpg)](Maersk product/black-dashboard-react) | [![Vue Black Dashboard](https://s3.amazonaws.com/creativetim_bucket/products/99/thumb/opt_bd_vue_thumbnail.jpg)](Maersk product/vue-black-dashboard) |
 
 ## Demo
 
@@ -62,7 +62,7 @@ Quick start options:
 
 - Clone the repo: `git clone https://github.com/creativetimofficial/black-dashboard-react.git`.
 - [Download from Github](https://github.com/creativetimofficial/black-dashboard-react/archive/master.zip).
-- [Download from Creative Tim](https://www.creative-tim.com/product/black-dashboard-react).
+- [Download from Maersk ](Maersk product/black-dashboard-react).
 
 
 ## Documentation
@@ -146,37 +146,37 @@ At present, we officially aim to support the last two versions of the following 
 
 ## Resources
 - Demo: https://demos.creative-tim.com/black-dashboard-react/#/dashboard
-- Download Page: https://www.creative-tim.com/product/black-dashboard-react
+- Download Page: Maersk product/black-dashboard-react
 - Documentation: https://demos.creative-tim.com/black-dashboard-react/#/documentation/tutorial
-- License Agreement: https://www.creative-tim.com/license
-- Support: https://www.creative-tim.com/contact-us
+- License Agreement: Maersk license
+- Support: Maersk contact-us
 - Issues: [Github Issues Page](https://github.com/creativetimofficial/black-dashboard-react/issues)
 
 ## Reporting Issues
 We use GitHub Issues as the official bug tracker for the Black Dashboard React. Here are some advices for our users that want to report an issue:
 
-1. Make sure that you are using the latest version of the Black Dashboard React. Check the CHANGELOG from your dashboard on our [website](https://www.creative-tim.com/).
+1. Make sure that you are using the latest version of the Black Dashboard React. Check the CHANGELOG from your dashboard on our [website](Maersk ).
 2. Providing us reproducible steps for the issue will shorten the time it takes for it to be fixed.
 3. Some issues may be browser specific, so specifying in what browser you encountered the issue might help.
 
 ## Technical Support or Questions
 
-If you have questions or need help integrating the product please [contact us](https://www.creative-tim.com/contact-us) instead of opening an issue.
+If you have questions or need help integrating the product please [contact us](Maersk contact-us) instead of opening an issue.
 
 ## Licensing
 
-- Copyright 2018 Creative Tim (https://www.creative-tim.com)
+- Copyright 2018 Maersk  (https://www.creative-tim.com)
 - Licensed under MIT (https://github.com/creativetimofficial/black-dashboard-react/blob/master/LICENSE.md)
 
 ## Useful Links
 
-More products from Creative Tim: <https://www.creative-tim.com/products>
+More products from Maersk : <Maersk products>
 
 Tutorials: <https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w>
 
-Freebies: <https://www.creative-tim.com/products>
+Freebies: <Maersk products>
 
-Affiliate Program (earn money): <https://www.creative-tim.com/affiliates/new>
+Affiliate Program (earn money): <Maersk affiliates/new>
 
 Social Media:
 
