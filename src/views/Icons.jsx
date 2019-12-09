@@ -4,11 +4,11 @@
 * Black Dashboard React v1.0.0
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/black-dashboard-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
+* Product Page: Maersk product/black-dashboard-react
+* Copyright 2019 Maersk  (https://www.creative-tim.com)
 * Licensed under MIT (https://github.com/creativetimofficial/black-dashboard-react/blob/master/LICENSE.md)
 
-* Coded by Creative Tim
+* Coded by Maersk 
 
 =========================================================
 
@@ -19,34 +19,49 @@ import React from "react";
 
 // reactstrap components
 import { Card, CardHeader, CardBody, Row, Col } from "reactstrap";
+import { Link } from 'react-router-dom';
+import '../views/flip.css';
+import { Color } from "@ag-grid-community/core";
 
 class Icons extends React.Component {
+
+  
   render() {
+  
     return (
       <>
         <div className="content">
           <Row>
             <Col md="12">
               <Card>
-                <CardHeader>
-                  <h5 className="title">100 Awesome Nucleo Icons</h5>
-                  <p className="category">
-                    Handcrafted by our friends from{" "}
-                    <a href="https://nucleoapp.com/?ref=1712">NucleoApp</a>
-                  </p>
-                </CardHeader>
-                <CardBody className="all-icons">
+               
+                <CardBody  className="all-icons">
                   <Row>
+                    
                     <Col
                       className="font-icon-list col-xs-6 col-xs-6"
                       lg="2"
                       md="3"
                       sm="4"
                     >
-                      <div className="font-icon-detail">
-                        <i className="tim-icons icon-alert-circle-exc" />
-                        <p>icon-alert-circle-exc</p>
+
+                    <div className="flip-card">
+                      <div className="flip-card-inner">
+                        <div className="flip-card-front">
+                        <p>  <Link to="/dashboard" style={{Color : "black"}} >Disbute Case Ration 30%</Link> </p>
+                        <p>I love guy Take Care your self Soon</p>
+                        </div>
+                        <div className="flip-card-back" style={{backgroundColor: "#328ba8"}} >
+                          <h1>Medium Case </h1> 
+                           <Link className="link"  to="/dashboard">Disbute Case Ration 30%</Link> 
+                          <p>I love guy Take Care your self Soon</p>
+                          
+                        </div>
                       </div>
+                    </div>
+
+
+
                     </Col>
                     <Col
                       className="font-icon-list col-xs-6 col-xs-6"
@@ -54,10 +69,24 @@ class Icons extends React.Component {
                       md="3"
                       sm="4"
                     >
-                      <div className="font-icon-detail">
-                        <i className="tim-icons icon-align-center" />
-                        <p>icon-align-center</p>
+
+                    <div className="flip-card">
+                      <div className="flip-card-inner">
+                        <div className="flip-card-front">
+                        <p>  <Link to="/dashboard">Email Case Ration 30%</Link> </p>
+                        <p>I love guy Take Care your self Soon</p>
+                        </div>
+                        <div className="flip-card-back" style={{backgroundColor: "black"}} >
+                          <h1>Shiping Case </h1> 
+                           <Link style={{Color : "black"}} to="/dashboard">Disbute Case Ration 30%</Link> 
+                          <p>I love guy Take Care your self Soon</p>
+                          
+                        </div>
                       </div>
+                    </div>
+
+
+
                     </Col>
                     <Col
                       className="font-icon-list col-xs-6 col-xs-6"
@@ -65,10 +94,24 @@ class Icons extends React.Component {
                       md="3"
                       sm="4"
                     >
-                      <div className="font-icon-detail">
-                        <i className="tim-icons icon-align-left-2" />
-                        <p>icon-align-left-2</p>
+
+                    <div className="flip-card">
+                      <div className="flip-card-inner">
+                        <div className="flip-card-front">
+                        <p>  <Link to="/dashboard"> Case Ration 30%</Link> </p>
+                        <p>I love guy Take Care your self Soon</p>
+                        </div>
+                        <div className="flip-card-back" style={{backgroundColor: "#328ba8"}} >
+                          <h1>Email Case </h1> 
+                           <Link style={{Color : "black"}} to="/dashboard">Email Case Ration 30%</Link> 
+                          <p>I love guy Take Care your self Soon</p>
+                          
+                        </div>
                       </div>
+                    </div>
+
+
+
                     </Col>
                     <Col
                       className="font-icon-list col-xs-6 col-xs-6"
@@ -76,10 +119,24 @@ class Icons extends React.Component {
                       md="3"
                       sm="4"
                     >
-                      <div className="font-icon-detail">
-                        <i className="tim-icons icon-app" />
-                        <p>icon-app</p>
+
+                    <div className="flip-card">
+                      <div className="flip-card-inner">
+                        <div className="flip-card-front">
+                        <p>  <Link to="/dashboard">Priority Case Ration 30%</Link> </p>
+                        <p>I love guy Take Care your self Soon</p>
+                        </div>
+                        <div className="flip-card-back" style={{backgroundColor: "black"}}>
+                          <h1>Disbute Case </h1> 
+                           <Link style={{Color : "black"}} to="/dashboard">Disbute Case Ration 30%</Link> 
+                          <p>I love guy Take Care your self Soon</p>
+                          
+                        </div>
                       </div>
+                    </div>
+
+
+
                     </Col>
                     <Col
                       className="font-icon-list col-xs-6 col-xs-6"

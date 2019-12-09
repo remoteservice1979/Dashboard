@@ -4,11 +4,11 @@
 * Black Dashboard React v1.0.0
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/black-dashboard-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
+* Product Page: Maersk product/black-dashboard-react
+* Copyright 2019 Maersk  (https://www.creative-tim.com)
 * Licensed under MIT (https://github.com/creativetimofficial/black-dashboard-react/blob/master/LICENSE.md)
 
-* Coded by Creative Tim
+* Coded by Maersk 
 
 =========================================================
 
@@ -20,10 +20,18 @@
 // #############################
 
 // chartExample1 and chartExample2 options
+// import {Redirect} from 'react-router-dom';
+
 let chart1_2_options = {
   maintainAspectRatio: false,
   legend: {
     display: false
+  },
+  onClick: function(evt, activeElements) {
+    var title = activeElements[0]._chart.tooltip._model.title[0];
+    localStorage.setItem('titleValue', title);
+    window.location.href ="map"; 
+    this.update();
   },
   tooltips: {
     backgroundColor: "#f5f5f5",
@@ -82,25 +90,27 @@ let chartExample1 = {
     gradientStroke.addColorStop(1, "rgba(29,140,248,0.2)");
     gradientStroke.addColorStop(0.4, "rgba(29,140,248,0.0)");
     gradientStroke.addColorStop(0, "rgba(29,140,248,0)"); //blue colors
-
+    
+   // var data = localStorage.getItem('brandData')
+   // console.log('data', data);
     return {
       labels: [
-        "JAN",
-        "FEB",
-        "MAR",
-        "APR",
-        "MAY",
-        "JUN",
-        "JUL",
-        "AUG",
-        "SEP",
-        "OCT",
-        "NOV",
-        "DEC"
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
       ],
       datasets: [
         {
-          label: "My First dataset",
+          label: "Maersk Line",
           fill: true,
           backgroundColor: gradientStroke,
           borderColor: "#1f8ef1",
@@ -114,10 +124,20 @@ let chartExample1 = {
           pointHoverRadius: 4,
           pointHoverBorderWidth: 15,
           pointRadius: 4,
-          data: [100, 70, 90, 70, 85, 60, 75, 60, 90, 80, 110, 100]
+        //  data: window.localStorage.getItem('brandData'),
+          data: [80, 120, 105, 110, 95, 105, 90, 100, 80, 95, 70, 120]
         }
-      ]
+      ],
+      options: {
+        onClick: function(evt, activeElements) {
+          var elementIndex = activeElements[0]._model.label;
+        //  alert('chartExample1',elementIndex);
+          this.update();
+        }
+      }
+      
     };
+    
   },
   data2: canvas => {
     let ctx = canvas.getContext("2d");
@@ -145,7 +165,7 @@ let chartExample1 = {
       ],
       datasets: [
         {
-          label: "My First dataset",
+          label: "Sea & Land",
           fill: true,
           backgroundColor: gradientStroke,
           borderColor: "#1f8ef1",
@@ -159,7 +179,7 @@ let chartExample1 = {
           pointHoverRadius: 4,
           pointHoverBorderWidth: 15,
           pointRadius: 4,
-          data: [80, 120, 105, 110, 95, 105, 90, 100, 80, 95, 70, 120]
+          data: [20, 120, 105, 110, 95, 105, 90, 90, 80, 95, 70, 120]
         }
       ]
     };
@@ -190,7 +210,7 @@ let chartExample1 = {
       ],
       datasets: [
         {
-          label: "My First dataset",
+          label: "SafMarine",
           fill: true,
           backgroundColor: gradientStroke,
           borderColor: "#1f8ef1",
@@ -209,7 +229,16 @@ let chartExample1 = {
       ]
     };
   },
-  options: chart1_2_options
+  // options: chart1_2_options
+  options: {
+    onClick: function(evt, activeElements) {
+      // var elementIndex = activeElements[0];
+      // alert(elementIndex);
+
+     // alert('data3',activeElements);
+      this.update();
+    }
+}
 };
 
 // #########################################
@@ -226,7 +255,8 @@ let chartExample2 = {
     gradientStroke.addColorStop(0, "rgba(29,140,248,0)"); //blue colors
 
     return {
-      labels: ["JUL", "AUG", "SEP", "OCT", "NOV", "DEC"],
+      labels: [ "JAN","FEB", "MAR", "APR","MAY","JUN","JUL", "AUG", "SEP", "OCT", "NOV", "DEC"],
+
       datasets: [
         {
           label: "Data",
@@ -243,7 +273,7 @@ let chartExample2 = {
           pointHoverRadius: 4,
           pointHoverBorderWidth: 15,
           pointRadius: 4,
-          data: [80, 100, 70, 80, 120, 80]
+          data: [80, 100, 70, 80, 120, 80, 80, 100, 70, 80, 120, 80]
         }
       ]
     };
@@ -285,6 +315,11 @@ let chartExample3 = {
     maintainAspectRatio: false,
     legend: {
       display: false
+    },
+    onClick: function(evt, activeElements) {
+      var elementIndex = activeElements[0]._model.label;
+      alert(elementIndex);
+      this.update();
     },
     tooltips: {
       backgroundColor: "#f5f5f5",

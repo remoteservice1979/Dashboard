@@ -4,11 +4,11 @@
 * Black Dashboard React v1.0.0
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/black-dashboard-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
+* Product Page: Maersk product/black-dashboard-react
+* Copyright 2019 Maersk  (https://www.creative-tim.com)
 * Licensed under MIT (https://github.com/creativetimofficial/black-dashboard-react/blob/master/LICENSE.md)
 
-* Coded by Creative Tim
+* Coded by Maersk 
 
 =========================================================
 
@@ -135,7 +135,7 @@ class Admin extends React.Component {
             bgColor={this.state.backgroundColor}
             rtlActive
             logo={{
-              outterLink: "https://www.creative-tim.com/",
+              outterLink: "Maersk ",
               text: "الإبداعية تيم",
               imgSrc: logo
             }}

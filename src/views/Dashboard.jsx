@@ -1,26 +1,11 @@
-/*!
-
-=========================================================
-* Black Dashboard React v1.0.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/black-dashboard-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/black-dashboard-react/blob/master/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // react plugin used to create charts
 import { Line, Bar } from "react-chartjs-2";
-
+import {Doughnut} from 'react-chartjs-2';
+import { Link } from 'react-router-dom';
+import RowDataFactory from "../views/richGridDeclarativeExample/RowDataFactory";
 // reactstrap components
 import {
   Button,
@@ -48,24 +33,50 @@ import {
   chartExample2,
   chartExample3,
   chartExample4
-} from "variables/charts.jsx";
+} from "../variables/charts.jsx";
 
 class Dashboard extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      bigChartData: "data1"
+      bigChartData: "data1",
+      currentBrand: "Maersk Line",
+      data : new RowDataFactory().createBrandRowMonthWiseData('Maersk Line')
     };
+    window.localStorage.setItem("brandData", new RowDataFactory().createBrandRowMonthWiseData('Maersk Line'));
   }
-  setBgChartData = name => {
+  setBgChartData = names => {
+    
     this.setState({
-      bigChartData: name
+      bigChartData: names
     });
-  };
+  }
+  setBrandData = name => {
+     window.localStorage.removeItem("Brand");
+     window.localStorage.removeItem("brandData");
+    //  if (name === ""){
+    //   localStorage.setItem('Brand',"Maersk Line");
+    //  }
+     window.localStorage.setItem('Brand',name);
+     window.localStorage.setItem("brandData", new RowDataFactory().createBrandRowMonthWiseData(name));
+
+     this.setState({
+      currentBrand : window.localStorage.getItem('Brand'),
+      dataValue: new RowDataFactory().createBrandRowMonthWiseData(name)
+
+    });
+
+  //  var data = new RowDataFactory().createBrandRowMonthWiseData(name);
+  //  console.log(data);
+  }
+
+  
   render() {
     return (
       <>
+      
         <div className="content">
+          {this.state.currentBrand}
           <Row>
             <Col xs="12">
               <Card className="card-chart">
@@ -75,6 +86,7 @@ class Dashboard extends React.Component {
                       <h5 className="card-category">Total Shipments</h5>
                       <CardTitle tag="h2">Performance</CardTitle>
                     </Col>
+                   
                     <Col sm="6">
                       <ButtonGroup
                         className="btn-group-toggle float-right"
@@ -83,7 +95,7 @@ class Dashboard extends React.Component {
                         <Button
                           tag="label"
                           className={classNames("btn-simple", {
-                            active: this.state.bigChartData === "data1"
+                            active: this.state.Brand === "Maersk Line" 
                           })}
                           color="info"
                           id="0"
@@ -96,8 +108,12 @@ class Dashboard extends React.Component {
                             name="options"
                             type="radio"
                           />
-                          <span className="d-none d-sm-block d-md-block d-lg-block d-xl-block">
-                            Accounts
+                          <span 
+                          
+                          className="d-none d-sm-block d-md-block d-lg-block d-xl-block"
+                          onClick={() => this.setBrandData("Maersk Line")}
+                          >
+                            Maersk Line
                           </span>
                           <span className="d-block d-sm-none">
                             <i className="tim-icons icon-single-02" />
@@ -109,7 +125,7 @@ class Dashboard extends React.Component {
                           size="sm"
                           tag="label"
                           className={classNames("btn-simple", {
-                            active: this.state.bigChartData === "data2"
+                            active: this.state.Brand === "Sea and Land"  
                           })}
                           onClick={() => this.setBgChartData("data2")}
                         >
@@ -118,8 +134,8 @@ class Dashboard extends React.Component {
                             name="options"
                             type="radio"
                           />
-                          <span className="d-none d-sm-block d-md-block d-lg-block d-xl-block">
-                            Purchases
+                          <span  onClick={() => this.setBrandData("Sea and Land")}  className="d-none d-sm-block d-md-block d-lg-block d-xl-block">
+                            Sea and Land
                           </span>
                           <span className="d-block d-sm-none">
                             <i className="tim-icons icon-gift-2" />
@@ -131,7 +147,7 @@ class Dashboard extends React.Component {
                           size="sm"
                           tag="label"
                           className={classNames("btn-simple", {
-                            active: this.state.bigChartData === "data3"
+                            active: this.state.Brand === "Safmarine" 
                           })}
                           onClick={() => this.setBgChartData("data3")}
                         >
@@ -140,8 +156,8 @@ class Dashboard extends React.Component {
                             name="options"
                             type="radio"
                           />
-                          <span className="d-none d-sm-block d-md-block d-lg-block d-xl-block">
-                            Sessions
+                          <span onClick={() => this.setBrandData("Safmarine")}  className="d-none d-sm-block d-md-block d-lg-block d-xl-block">
+                            Safmarine
                           </span>
                           <span className="d-block d-sm-none">
                             <i className="tim-icons icon-tap-02" />
@@ -152,10 +168,11 @@ class Dashboard extends React.Component {
                   </Row>
                 </CardHeader>
                 <CardBody>
-                  <div className="chart-area">
+                <div className="chart-area-top ">
                     <Line
                       data={chartExample1[this.state.bigChartData]}
                       options={chartExample1.options}
+                      
                     />
                   </div>
                 </CardBody>
@@ -166,7 +183,7 @@ class Dashboard extends React.Component {
             <Col lg="4">
               <Card className="card-chart">
                 <CardHeader>
-                  <h5 className="card-category">Total Shipments</h5>
+                  <h5 className="card-category">Total Shipments1</h5>
                   <CardTitle tag="h3">
                     <i className="tim-icons icon-bell-55 text-info" />{" "}
                     763,215
@@ -178,6 +195,7 @@ class Dashboard extends React.Component {
                       data={chartExample2.data}
                       options={chartExample2.options}
                     />
+                     <Link to="/map">Disbute Case Ration 30%</Link> 
                   </div>
                 </CardBody>
               </Card>

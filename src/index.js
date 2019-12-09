@@ -4,11 +4,11 @@
 * Black Dashboard React v1.0.0
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/black-dashboard-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
+* Product Page: Maersk product/black-dashboard-react
+* Copyright 2019 Maersk  (https://www.creative-tim.com)
 * Licensed under MIT (https://github.com/creativetimofficial/black-dashboard-react/blob/master/LICENSE.md)
 
-* Coded by Creative Tim
+* Coded by Maersk 
 
 =========================================================
 
@@ -26,6 +26,10 @@ import RTLLayout from "layouts/RTL/RTL.jsx";
 import "assets/scss/black-dashboard-react.scss";
 import "assets/demo/demo.css";
 import "assets/css/nucleo-icons.css";
+
+import "@ag-grid-enterprise/all-modules/dist/styles/ag-grid.css";
+import "@ag-grid-enterprise/all-modules/dist/styles/ag-theme-balham.css";
+import "../node_modules/bootstrap/dist/css/bootstrap.css";
 
 const hist = createBrowserHistory();
 

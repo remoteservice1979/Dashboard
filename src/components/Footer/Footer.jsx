@@ -4,11 +4,11 @@
 * Black Dashboard React v1.0.0
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/black-dashboard-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
+* Product Page: Maersk product/black-dashboard-react
+* Copyright 2019 Maersk  (https://www.creative-tim.com)
 * Licensed under MIT (https://github.com/creativetimofficial/black-dashboard-react/blob/master/LICENSE.md)
 
-* Coded by Creative Tim
+* Coded by Maersk 
 
 =========================================================
 
@@ -30,7 +30,7 @@ class Footer extends React.Component {
         <Container fluid>
           <Nav>
             <NavItem>
-              <NavLink href="javascript:void(0)">Creative Tim</NavLink>
+              <NavLink href="javascript:void(0)">Maersk </NavLink>
             </NavItem>
             <NavItem>
               <NavLink href="javascript:void(0)">About Us</NavLink>
@@ -47,7 +47,7 @@ class Footer extends React.Component {
               rel="noopener noreferrer"
               target="_blank"
             >
-              Creative Tim
+              Maersk 
             </a>{" "}
             for a better web.
           </div>

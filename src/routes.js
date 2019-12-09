@@ -4,11 +4,11 @@
 * Black Dashboard React v1.0.0
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/black-dashboard-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
+* Product Page: Maersk product/black-dashboard-react
+* Copyright 2019 Maersk  (https://www.creative-tim.com)
 * Licensed under MIT (https://github.com/creativetimofficial/black-dashboard-react/blob/master/LICENSE.md)
 
-* Coded by Creative Tim
+* Coded by Maersk 
 
 =========================================================
 
@@ -23,32 +23,45 @@ import Rtl from "views/Rtl.jsx";
 import TableList from "views/TableList.jsx";
 import Typography from "views/Typography.jsx";
 import UserProfile from "views/UserProfile.jsx";
+import GridDrill from "views/richGridDeclarativeExample/RichGridDeclarativeExample.jsx"
 
 var routes = [
   {
-    path: "/dashboard",
+    path: "/icons",
     name: "Dashboard",
     rtlName: "لوحة القيادة",
     icon: "tim-icons icon-chart-pie-36",
-    component: Dashboard,
-    layout: "/admin"
-  },
-  {
-    path: "/icons",
-    name: "Icons",
-    rtlName: "الرموز",
-    icon: "tim-icons icon-atom",
     component: Icons,
     layout: "/admin"
   },
   {
-    path: "/map",
-    name: "Map",
-    rtlName: "خرائط",
-    icon: "tim-icons icon-pin",
-    component: Map,
+    path: "/dashboard",
+    name: "Trend",
+    rtlName: "الرموز",
+    icon: "tim-icons icon-atom",
+    component: Dashboard,
     layout: "/admin"
   },
+  {
+    path: "/map",
+    name: "GridDrill",
+    rtlName: "خرائط",
+    icon: "tim-icons icon-pin",
+    component: GridDrill,
+    layout: "/admin"
+  },
+
+  
+
+  {
+    path: "/Maersk",
+    name: "GridDrill",
+    rtlName: "خرائط",
+    icon: "tim-icons icon-pin",
+    component: GridDrill,
+    layout: "/admin"
+  },
+
   {
     path: "/notifications",
     name: "Notifications",

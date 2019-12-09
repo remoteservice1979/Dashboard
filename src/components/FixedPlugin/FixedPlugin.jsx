@@ -4,11 +4,11 @@
 * Black Dashboard React v1.0.0
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/black-dashboard-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
+* Product Page: Maersk product/black-dashboard-react
+* Copyright 2019 Maersk  (https://www.creative-tim.com)
 * Licensed under MIT (https://github.com/creativetimofficial/black-dashboard-react/blob/master/LICENSE.md)
 
-* Coded by Creative Tim
+* Coded by Maersk 
 
 =========================================================
 
@@ -104,7 +104,7 @@ class FixedPlugin extends Component {
             </li>
             <li className="button-container">
               <Button
-                href="https://www.creative-tim.com/product/black-dashboard-react"
+                href="Maersk product/black-dashboard-react"
                 color="primary"
                 block
                 className="btn-round"
@@ -124,7 +124,7 @@ class FixedPlugin extends Component {
             <li className="header-title">Want more components?</li>
             <li className="button-container">
               <Button
-                href="https://www.creative-tim.com/product/black-dashboard-pro-react"
+                href="Maersk product/black-dashboard-pro-react"
                 className="btn-round"
                 disabled
                 block
