@@ -1,14 +1,14 @@
 /*!
 
 =========================================================
-* Black Dashboard React v1.0.0
+* Maersk Dashboard React v1.0.0
 =========================================================
 
 * Product Page: Maersk product/black-dashboard-react
 * Copyright 2019 Maersk  (https://www.creative-tim.com)
 * Licensed under MIT (https://github.com/creativetimofficial/black-dashboard-react/blob/master/LICENSE.md)
 
-* Coded by Maersk 
+* Coded By Anil 
 
 =========================================================
 
@@ -61,7 +61,7 @@ class Notifications extends React.Component {
       message: (
         <div>
           <div>
-            Welcome to <b>Black Dashboard React</b> - a beautiful freebie for
+            Welcome to <b>Maersk Dashboard React</b> - a beautiful freebie for
             every web developer.
           </div>
         </div>

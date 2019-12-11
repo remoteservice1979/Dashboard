@@ -29,8 +29,9 @@
   }
   
   .flip-card-front {
-    background-color: #32a892;
+    background-color: white;
     color: black;
+    font: blue;
   }
   
   .flip-card-back {

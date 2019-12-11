@@ -47,14 +47,18 @@ showDropdownMenu(event) {
 
           { this.state.displayMenu ? (
           <ul>
-         <li onClick={this.props.selectData}>Jan</li>
+            <li onClick={this.props.selectData}>Jan</li>
             <li onClick={this.props.selectData}>Feb</li>
             <li onClick={this.props.selectData}>Mar</li>
             <li onClick={this.props.selectData}>Apr</li>
             <li onClick={this.props.selectData}>May</li>
             <li onClick={this.props.selectData}>Jul</li>
             <li onClick={this.props.selectData}>Aug</li>
-            <li onClick={this.props.selectData}>Sept</li>
+            <li onClick={this.props.selectData}>Sep</li>
+            <li onClick={this.props.selectData}>Oct</li>
+            <li onClick={this.props.selectData}>Nov</li>
+            <li onClick={this.props.selectData}>Dec</li>
+
           </ul>
         ):
         (

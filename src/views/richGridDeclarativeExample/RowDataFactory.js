@@ -45,16 +45,16 @@ export default class RowDataFactory {
 
     createRowData() {
         const rowData = [];
-        var getMonth = localStorage.getItem("titleValue");
-        var getBrand = localStorage.getItem("Brand");
+        // var getMonth = localStorage.getItem("titleValue");
+        // var getBrand = localStorage.getItem("Brand");
         for (let i = 0; i < 10000; i++) {
        
 
               const countryData = RefData.SAMPLE_DATA[i % RefData.SAMPLE_DATA.length];
-              var dateFormat = require('dateformat');
-              var month = dateFormat(countryData.createddate, "mmm").toUpperCase();;
-            // console.log(getMonth);
-              if(month == getMonth && countryData.Liner_Brand__c === getBrand )
+            //   var dateFormat = require('dateformat');
+            //   var month = dateFormat(countryData.createddate, "mmm").toUpperCase();;
+            // // console.log(getMonth);
+            //   if(month == getMonth && countryData.Liner_Brand__c === getBrand )
                 rowData.push({
                     CaseNumber: countryData.CaseNumber,
                 
@@ -82,7 +82,49 @@ export default class RowDataFactory {
 
         return rowData;
     }
-    createBrandRowMonthWiseData(brand) {
+
+    createRowMonthWiseData(Month) {
+        const rowData = [];
+        // var getMonth = localStorage.getItem("titleValue");
+        var getBrand = localStorage.getItem("Brand");
+        var getMonth = Month;
+        // var getBrand = Brand;
+        for (let i = 0; i < 10000; i++) {
+       
+
+              const countryData = RefData.SAMPLE_DATA[i % RefData.SAMPLE_DATA.length];
+              var dateFormat = require('dateformat');
+              var month = dateFormat(countryData.createddate, "mmm");
+            // console.log(getMonth);
+              if(month == getMonth && countryData.Liner_Brand__c === getBrand  || getBrand === 'All')
+                rowData.push({
+                    CaseNumber: countryData.CaseNumber,
+                
+                    CreateDate: this.dateFormat(countryData.createddate),
+                    AgeInBusinessHours: countryData.Age_In_Business_Hours__c,
+                    CountEmailsFromContact_c: countryData.Count_Emails_From_Contact__c,
+                    years: countryData.Priority,
+                    proficiency: countryData.Priority,
+                    type : countryData.Type,
+                    SubType_c: countryData.Sub_Type__c,
+                    CaseChannel: countryData.Case_Channel__c,
+                    Department: countryData.Department__c,
+                    LinerBrand_c: countryData.Liner_Brand__c,
+                    Customer_Follow_Up_Notes__c : countryData.Customer_Follow_Up_Notes__c,
+                    Reason_For_Case__c: countryData.Reason_For_Case__c,
+                    Priority: countryData.Priority,
+                    Times_Case_Reassigned__c: countryData.Times_Case_Reassigned__c,
+                    OwnerId: countryData.OwnerId,
+                    CUSTOMER_DESC: countryData.CUSTOMER_DESC,
+                    status: countryData.Status,
+
+
+            });
+        }
+
+        return rowData;
+    }
+    createBrandRowMonthWiseData(brand, month) {
         // const rowData = [];
         // const MareskLine = [];
         // const SeaLand = [];

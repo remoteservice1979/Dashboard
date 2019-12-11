@@ -49,7 +49,7 @@ export default class RichGridDeclarativeExample extends Component {
             emailData : new RowDataFactory().createEmailRowData(),
             rowCount: null,
             chart: false,
-            monthName: "Jan",
+            monthName: "Feb",
             icons: {
                 columnRemoveFromGroup: '<i class="fa fa-times"/>',
                 filter: '<i class="fa fa-filter"/>',
@@ -77,11 +77,12 @@ export default class RichGridDeclarativeExample extends Component {
        //   localStorage.setItem('Brand',"Maersk Line");
        //  }
         window.localStorage.setItem('Brand',name);
+        var Month = localStorage.getItem('titleValue');
      //   window.localStorage.setItem("brandData", new RowDataFactory().createBrandRowMonthWiseData(name));
      // rowData: new RowDataFactory().createRowData(),
         this.setState({
          currentBrand : window.localStorage.getItem('Brand'),
-         rowData: new RowDataFactory().createRowData()
+         rowData: new RowDataFactory().createRowMonthWiseData(Month)
    
        });
    
@@ -142,11 +143,14 @@ export default class RichGridDeclarativeExample extends Component {
 
     selectData(e) {
         var monthVal =  e.target.innerText;
-        this.setState({
-            monthName: e.target.innerText
-        })
-    
+        localStorage.removeItem("titleValue" );
         localStorage.setItem("titleValue",monthVal );
+        this.setState({
+            monthName: e.target.innerText,
+            rowData: new RowDataFactory().createRowMonthWiseData(monthVal)
+        })
+       
+        
       }
 
     //   handleOnChange(e) {
@@ -316,6 +320,29 @@ export default class RichGridDeclarativeExample extends Component {
                         className="btn-group-toggle float-right"
                         data-toggle="buttons"
                       >
+
+                        <Button
+                          color="info"
+                          id="1"
+                          size="sm"
+                          tag="label"
+                          className={classNames("btn-simple", {
+                            active: this.state.Brand === "All"  
+                          })}
+                        //   onClick={() => this.setBgChartData("data2")}
+                        >
+                          <input
+                            className="d-none"
+                            name="options"
+                            type="radio"
+                          />
+                          <span  onClick={() => this.setBrandData("All")}  className="d-none d-sm-block d-md-block d-lg-block d-xl-block">
+                            All
+                          </span>
+                          <span className="d-block d-sm-none">
+                            <i className="tim-icons icon-gift-2" />
+                          </span>
+                        </Button>
                         <Button
                           tag="label"
                           className={classNames("btn-simple", {
@@ -365,6 +392,8 @@ export default class RichGridDeclarativeExample extends Component {
                             <i className="tim-icons icon-gift-2" />
                           </span>
                         </Button>
+
+                  
                         <Button
                           color="info"
                           id="2"
