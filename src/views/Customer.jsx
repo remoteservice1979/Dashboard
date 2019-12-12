@@ -7,7 +7,8 @@ import { Card, CardBody, Row, Col, Button } from "reactstrap";
 import { Link } from 'react-router-dom';
 import TreeMenu from 'react-simple-tree-menu';
 import './main.css';
-import { AgGridReact } from "@ag-grid-community/react";
+import Table from '../views/Tables';
+// import { AgGridReact } from "@ag-grid-community/react";
 import { AllCommunityModules } from "@ag-grid-community/all-modules";
 
 
@@ -20,6 +21,8 @@ class Icons extends React.Component {
               displayMenu: false,
               monthName: "",
               companyDetail: "",
+              Brand:"",
+              Key:""
             };
        
         //  this.showDropdownMenu = this.showDropdownMenu.bind(this);
@@ -33,15 +36,18 @@ class Icons extends React.Component {
     showDetail(event) {
       
      //   alert(event.target.value);
-     console.log(event.label);
+    // console.log(event.label);
      this.setState({
-        companyDetail: "This Company " +  event.label 
+        companyDetail: "This Company " +  event.label ,
+        Brand: event.label,
+        Key: event.key
      })
       
      var title = event.label;
      localStorage.setItem('titleValue', title);
-     window.location.href ="map"; 
-     this.update();
+    // window.location.href ="map"; 
+     
+    
         //  this.setState({ displayMenu: true }, () => {
         // // // document.addEventListener('click', this.hideDropdownMenu);
         //  });
@@ -70,11 +76,11 @@ class Icons extends React.Component {
                         data={[
                             {
                             key: 'Brand',
-                            label: 'MaerskLine',
+                            label: 'Maersk Line',
                             nodes: [
                                 {
-                                key: 'Payer',
-                                label: 'Payer',
+                                key: 'PAYER_NAME',
+                                label: 'GREENCARRIER SHANGHAI LTD QINGDAO',
                                 nodes: [
                                     {
                                     key: 'Customer',
@@ -119,16 +125,16 @@ class Icons extends React.Component {
                             url: 'https://www.google.com/search?q=mammal'
                             },
                             {
-                            key: 'SeaLand',
-                            label: 'SeaLand',
+                            key: 'Brand',
+                            label: 'SeaGo Line A/S',
                             nodes: [
                                 {
                                 key: 'Payer',
-                                label: 'Payer',
+                                label: 'PAYER_NAME',
                                 nodes: [
                                     {
                                     key: 'Customer',
-                                    label: 'Nike',
+                                    label: 'GREENCARRIER SHANGHAI LTD QINGDAO',
                                     url: 'https://www.google.com/search?q=lizard'
                                     },
                                     {
@@ -156,6 +162,18 @@ class Icons extends React.Component {
 
                         />
                 
+                  </Col>
+                  <Col
+                   className="font-icon-list col-xs-6 col-xs-6"
+                   lg="6"
+                   md="6"
+                   sm="4"
+                  
+                  >
+                   
+                  <Table  Brand = {this.state.Brand}  Key = {this.state.Key}/>
+
+                  
                   </Col>
                  
 

@@ -5,13 +5,14 @@ import React from "react";
 import { Card, CardBody, Row, Col } from "reactstrap";
 import { Link } from 'react-router-dom';
 import '../views/flip.css';
-import { Color } from "@ag-grid-community/core";
+
+// var data = require ('../data.js');
 
 class Icons extends React.Component {
 
   
   render() {
-  
+    
     return (
       <>
         <div className="content">
@@ -81,6 +82,7 @@ class Icons extends React.Component {
                     </Col>
 
                   </Row>
+               
                 </CardBody>
               </Card>
             </Col>
