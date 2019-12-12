@@ -23,7 +23,9 @@ import Rtl from "views/Rtl.jsx";
 import TableList from "views/TableList.jsx";
 import Typography from "views/Typography.jsx";
 import UserProfile from "views/UserProfile.jsx";
-import GridDrill from "views/richGridDeclarativeExample/RichGridDeclarativeExample.jsx"
+import GridDrill from "views/richGridDeclarativeExample/RichGridDeclarativeExample.jsx";
+import Main from "views/Main.jsx";
+import Customer from "views/Customer.jsx";
 
 var routes = [
   {
@@ -31,7 +33,7 @@ var routes = [
     name: "Dashboard",
     rtlName: "لوحة القيادة",
     icon: "tim-icons icon-chart-pie-36",
-    component: Icons,
+    component: Main,
     layout: "/admin"
   },
   {
@@ -39,7 +41,16 @@ var routes = [
     name: "Trend",
     rtlName: "الرموز",
     icon: "tim-icons icon-atom",
-    component: Dashboard,
+    component: Customer,
+    layout: "/admin"
+  },
+
+  {
+    path: "/customer",
+    name: "Cutomer",
+    rtlName: "الرموز",
+    icon: "tim-icons icon-atom",
+    component: Customer,
     layout: "/admin"
   },
   {

@@ -1,0 +1,43 @@
+.rstm-toggle-icon {
+    display: inline-block; }
+    .rstm-toggle-icon-symbol {
+      width: 2rem;
+      height: 2rem;
+      text-align: center;
+      line-height: 2rem; }
+  
+  .rstm-tree-item-group {
+    list-style-type: none;
+    padding-left: 0;
+    border-top: 1px solid #ccc;
+    text-align: left;
+    width: 50vw; 
+    background-color: white;
+  }
+  .rstm-tree-item {
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+    color: blueviolet;
+    background-color: chocolate;
+    background: none;
+    border-bottom: 1px solid #ccc;
+    box-shadow: none;
+    z-index: unset;
+    position: relative; }
+    .rstm-tree-item--active {
+      color: black;
+      background: #179ed3;
+      border-bottom: none; }
+    .rstm-tree-item--focused {
+      box-shadow: 0 0 5px 0 #222;
+      z-index: 999; }
+  
+  .rstm-search {
+    padding: 1rem 1.5rem;
+    border: none;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    color: red;
+    border-radius: 5px;
+  
+  }
