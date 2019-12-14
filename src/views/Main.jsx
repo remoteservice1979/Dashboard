@@ -30,7 +30,7 @@ class Icons extends React.Component {
                     >
                      <Link style={{Color : "black"}} to="/customer">
                         <div className="font-icon-detail">
-                            <i className="tim-icons icon-bag-16" />
+                            <i className="go-icons icon-bag-16" />
 
                             <p style={{ fontSize: "2.875em"}}>Booking</p>
                         </div>
@@ -45,7 +45,7 @@ class Icons extends React.Component {
 
                     <Link style={{Color : "black"}} to="/customer">
                              <div className="font-icon-detail">
-                               <i className="tim-icons icon-bag-16" />
+                               <i className="go-icons icon-bag-16" />
 
                                      <p style={{ fontSize: "2.875em"}}>Documentation</p>
                              </div>
@@ -60,7 +60,7 @@ class Icons extends React.Component {
                     >
                       <Link style={{Color : "black"}} to="/customer">
                              <div className="font-icon-detail">
-                               <i className="tim-icons icon-bag-16" />
+                               <i className="go-icons icon-bag-16" />
 
                                      <p style={{ fontSize: "2.875em"}}>Service</p>
                              </div>
@@ -74,7 +74,7 @@ class Icons extends React.Component {
                     >
                     <Link style={{Color : "black"}} to="/customer">
                     <div className="font-icon-detail">
-                      <i className="tim-icons icon-bag-16" />
+                      <i className="go-icons icon-bag-16" />
 
                             <p style={{ fontSize: "2.875em"}}>Financial</p>
                     </div>

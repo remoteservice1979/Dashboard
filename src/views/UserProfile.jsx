@@ -1,23 +1,6 @@
-/*!
 
-=========================================================
-* Maersk Dashboard React v1.0.0
-=========================================================
-
-* Product Page: Maersk product/black-dashboard-react
-* Copyright 2019 Maersk  (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/black-dashboard-react/blob/master/LICENSE.md)
-
-* Coded By Anil 
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
 
-// reactstrap components
 import {
   Button,
   Card,
@@ -50,7 +33,7 @@ class UserProfile extends React.Component {
                         <FormGroup>
                           <label>Company (disabled)</label>
                           <Input
-                            defaultValue="Creative Code Inc."
+                            defaultValue="Maersk Line."
                             disabled
                             placeholder="Company"
                             type="text"
@@ -61,7 +44,7 @@ class UserProfile extends React.Component {
                         <FormGroup>
                           <label>Username</label>
                           <Input
-                            defaultValue="michael23"
+                            defaultValue="Anil Josh"
                             placeholder="Username"
                             type="text"
                           />
@@ -144,8 +127,7 @@ class UserProfile extends React.Component {
                           <label>About Me</label>
                           <Input
                             cols="80"
-                            defaultValue="Lamborghini Mercy, Your chick she so thirsty, I'm in
-                            that two seat Lambo."
+                            defaultValue="Engineering Manager at Pearson"
                             placeholder="Here can be your description"
                             rows="4"
                             type="textarea"

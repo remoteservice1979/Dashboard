@@ -5,8 +5,8 @@
 =========================================================
 
 * Product Page: Maersk product/black-dashboard-react
-* Copyright 2019 Maersk  (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/black-dashboard-react/blob/master/LICENSE.md)
+* Copyright 2019 Maersk  (https://www.abc-go.com)
+* Licensed under MIT (https://github.com/abctimofficial/black-dashboard-react/blob/master/LICENSE.md)
 
 * Coded By Anil 
 
@@ -15,11 +15,11 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
-.tim-row {
+.go-row {
   margin-bottom: 20px;
 }
 
-.tim-white-buttons {
+.go-white-buttons {
   background-color: #777777;
 }
 
@@ -44,11 +44,11 @@
   text-transform: none;
 }
 
-.tim-row {
+.go-row {
   padding-top: 60px;
 }
 
-.tim-row h3 {
+.go-row h3 {
   margin-top: 0;
 }
 

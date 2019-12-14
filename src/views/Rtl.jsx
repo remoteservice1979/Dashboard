@@ -4,11 +4,11 @@
 * Maersk Dashboard React v1.0.0
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/black-dashboard-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/black-dashboard-react/blob/master/LICENSE.md)
+* Product Page: https://www.abc-go.com/product/black-dashboard-react
+* Copyright 2019 Creative go (https://www.abc-go.com)
+* Licensed under MIT (https://github.com/abctimofficial/black-dashboard-react/blob/master/LICENSE.md)
 
-* Coded by Creative Tim
+* Coded by Creative go
 
 =========================================================
 
@@ -100,7 +100,7 @@ class Rtl extends React.Component {
                             حسابات
                           </span>
                           <span className="d-block d-sm-none">
-                            <i className="tim-icons icon-single-02" />
+                            <i className="go-icons icon-single-02" />
                           </span>
                         </Button>
                         <Button
@@ -122,7 +122,7 @@ class Rtl extends React.Component {
                             المشتريات
                           </span>
                           <span className="d-block d-sm-none">
-                            <i className="tim-icons icon-gift-2" />
+                            <i className="go-icons icon-gift-2" />
                           </span>
                         </Button>
                         <Button
@@ -144,7 +144,7 @@ class Rtl extends React.Component {
                             جلسات
                           </span>
                           <span className="d-block d-sm-none">
-                            <i className="tim-icons icon-tap-02" />
+                            <i className="go-icons icon-tap-02" />
                           </span>
                         </Button>
                       </ButtonGroup>
@@ -168,7 +168,7 @@ class Rtl extends React.Component {
                 <CardHeader>
                   <h5 className="card-category">شحنات كاملة</h5>
                   <CardTitle tag="h3">
-                    <i className="tim-icons icon-bell-55 text-primary" />{" "}
+                    <i className="go-icons icon-bell-55 text-primary" />{" "}
                     763,215
                   </CardTitle>
                 </CardHeader>
@@ -187,7 +187,7 @@ class Rtl extends React.Component {
                 <CardHeader>
                   <h5 className="card-category">المبيعات اليومية</h5>
                   <CardTitle tag="h3">
-                    <i className="tim-icons icon-delivery-fast text-info" />{" "}
+                    <i className="go-icons icon-delivery-fast text-info" />{" "}
                     3,500€
                   </CardTitle>
                 </CardHeader>
@@ -206,7 +206,7 @@ class Rtl extends React.Component {
                 <CardHeader>
                   <h5 className="card-category">المهام المكتملة</h5>
                   <CardTitle tag="h3">
-                    <i className="tim-icons icon-send text-success" /> 12,100K
+                    <i className="go-icons icon-send text-success" /> 12,100K
                   </CardTitle>
                 </CardHeader>
                 <CardBody>
@@ -235,7 +235,7 @@ class Rtl extends React.Component {
                       data-toggle="dropdown"
                       id="dropdownMenuLink"
                     >
-                      <i className="tim-icons icon-settings-gear-63" />
+                      <i className="go-icons icon-settings-gear-63" />
                     </DropdownToggle>
                     <DropdownMenu aria-labelledby="dropdownMenuLink">
                       <DropdownItem
@@ -289,7 +289,7 @@ class Rtl extends React.Component {
                               title=""
                               type="button"
                             >
-                              <i className="tim-icons icon-settings" />
+                              <i className="go-icons icon-settings" />
                             </Button>
                             <UncontrolledTooltip
                               delay={0}
@@ -327,7 +327,7 @@ class Rtl extends React.Component {
                               title=""
                               type="button"
                             >
-                              <i className="tim-icons icon-settings" />
+                              <i className="go-icons icon-settings" />
                             </Button>
                             <UncontrolledTooltip
                               delay={0}
@@ -363,7 +363,7 @@ class Rtl extends React.Component {
                               title=""
                               type="button"
                             >
-                              <i className="tim-icons icon-settings" />
+                              <i className="go-icons icon-settings" />
                             </Button>
                             <UncontrolledTooltip
                               delay={0}
@@ -405,7 +405,7 @@ class Rtl extends React.Component {
                               title=""
                               type="button"
                             >
-                              <i className="tim-icons icon-settings" />
+                              <i className="go-icons icon-settings" />
                             </Button>
                             <UncontrolledTooltip
                               delay={0}
@@ -447,7 +447,7 @@ class Rtl extends React.Component {
                               title=""
                               type="button"
                             >
-                              <i className="tim-icons icon-settings" />
+                              <i className="go-icons icon-settings" />
                             </Button>
                             <UncontrolledTooltip
                               delay={0}
@@ -485,7 +485,7 @@ class Rtl extends React.Component {
                               title=""
                               type="button"
                             >
-                              <i className="tim-icons icon-settings" />
+                              <i className="go-icons icon-settings" />
                             </Button>
                             <UncontrolledTooltip
                               delay={0}

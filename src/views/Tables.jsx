@@ -35,9 +35,9 @@ class Tables extends React.Component {
       var dataSel = invoice.filter(d => d.BRAND === this.props.Brand || d.PAYER_NAME === this.props.Brand );
         return (
 
-            <div style={{ padding: "20px" }}>
+            <div className="table-striped" style={{ height: 300, overflow: "auto", backgroundColor: "black" }}>
                 <h3 >Invoice Details of {this.props.Brand} Type { this.props.Key}  </h3>
-                <BootstrapTable keyField="id" data={dataSel}  columns={columns} />
+                <BootstrapTable  className="table-striped" style={{ height: 300, overflow: "auto", backgroundColor: "black" }}keyField="id" data={dataSel}  columns={columns} />
             </div>
       
         )

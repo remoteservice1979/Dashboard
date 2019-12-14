@@ -5,8 +5,8 @@
 =========================================================
 
 * Product Page: Maersk product/black-dashboard-react
-* Copyright 2019 Maersk  (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/black-dashboard-react/blob/master/LICENSE.md)
+* Copyright 2019 Maersk  (https://www.abc-go.com)
+* Licensed under MIT (https://github.com/abctimofficial/black-dashboard-react/blob/master/LICENSE.md)
 
 * Coded By Anil 
 
@@ -137,7 +137,7 @@ class AdminNavbar extends React.Component {
                     id="search-button"
                     onClick={this.toggleModalSearch}
                   >
-                    <i className="tim-icons icon-zoom-split" />
+                    <i className="go-icons icon-zoom-split" />
                     <span className="d-lg-none d-md-block">Search</span>
                   </Button>
                 </InputGroup>
@@ -149,7 +149,7 @@ class AdminNavbar extends React.Component {
                     nav
                   >
                     <div className="notification d-none d-lg-block d-xl-block" />
-                    <i className="tim-icons icon-sound-wave" />
+                    <i className="go-icons icon-sound-wave" />
                     <p className="d-lg-none">Notifications</p>
                   </DropdownToggle>
                   <DropdownMenu className="dropdown-navbar" tag="ul" right>
@@ -226,7 +226,7 @@ class AdminNavbar extends React.Component {
               type="button"
               onClick={this.toggleModalSearch}
             >
-              <i className="tim-icons icon-simple-remove" />
+              <i className="go-icons icon-simple-remove" />
             </button>
           </div>
         </Modal>

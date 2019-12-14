@@ -5,8 +5,8 @@
 =========================================================
 
 * Product Page: Maersk product/black-dashboard-react
-* Copyright 2019 Maersk  (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/black-dashboard-react/blob/master/LICENSE.md)
+* Copyright 2019 Maersk  (https://www.abc-go.com)
+* Licensed under MIT (https://github.com/abctimofficial/black-dashboard-react/blob/master/LICENSE.md)
 
 * Coded By Anil 
 
@@ -67,7 +67,7 @@ class Notifications extends React.Component {
         </div>
       ),
       type: type,
-      icon: "tim-icons icon-bell-55",
+      icon: "go-icons icon-bell-55",
       autoDismiss: 7
     };
     this.refs.notificationAlert.notificationAlert(options);
@@ -94,7 +94,7 @@ class Notifications extends React.Component {
                   </UncontrolledAlert>
                   <UncontrolledAlert className="alert-with-icon" color="info">
                     <span
-                      className="tim-icons icon-bell-55"
+                      className="go-icons icon-bell-55"
                       data-notify="icon"
                     />
                     <span data-notify="message">
@@ -103,7 +103,7 @@ class Notifications extends React.Component {
                   </UncontrolledAlert>
                   <UncontrolledAlert className="alert-with-icon" color="info">
                     <span
-                      className="tim-icons icon-bell-55"
+                      className="go-icons icon-bell-55"
                       data-notify="icon"
                     />
                     <span data-notify="message">
