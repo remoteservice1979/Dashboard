@@ -2,7 +2,7 @@
 FROM node:12.2.0-alpine
 
 # set working directory
-WORKDIR /Dashboard
+WORKDIR Dashboard
 
 # add `/app/node_modules/.bin` to $PATH
 ENV PATH Dashboard/src/node_modules/.bin:$PATH
