@@ -16,7 +16,7 @@
     "history": "4.7.2",
     "increase-memory-limit": "^1.0.7",
     "install": "^0.13.0",
-    "lodash": "4.17.11",
+    "lodash": "4.17.21",
     "node-sass": "^4.13.0",
     "npm": "^6.13.1",
     "perfect-scrollbar": "1.4.0",
